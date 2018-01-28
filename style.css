@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    overflow: hidden;
+}
+
+main {
+    overflow-y: scroll;
+}
+
+nav {
+    background-color: #00648f;
+    color: white;
+    box-shadow: -5px 0px 30px 10px #A8A8A8;
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    margin: 2vh 3vw;
+}
+
+h3 {
+    margin: 1vh 1vw;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 1vw;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a:link, a:visited{
+    
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    margin: 2vh 2vw;
+}
+
+p {
+    margin: 2vh 2vw;
+}
+
+button {
+    background-color: #00648f;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+button:hover #im1 {
+    content: url(images/1x/button1_B.png);
+}
+
+button:hover #im2 {
+    content: url(images/1x/button3_B.png);
+}
+
+#button2 {
+    display: none;
+    width: 100%;
+    align-self: flex-start;
+}
+
+#im2 {
+    min-width: 1vw;
+}
+#im1 {
+    min-width: 0.5vw;
+}
+#divi {
+    width: 100%;
+}
+
+.dropdown {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown li {
+    border-bottom: 1px dashed white;
+    padding: 0.5vh;
+    margin: 0;
+}

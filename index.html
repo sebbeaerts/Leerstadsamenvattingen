@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+    <button id="button2" onclick="openNav()"><img id="im2" src="images/1x/button3_B%20kopie.png"></button>
+    <div id="divi">
+    <h2>Inhoudsopgave</h2>
+    <h3>Modules 1ste jaar</h3>
+    <h3>Trimister I</h3>
+    <ul>
+        <li onclick="dropdown()"><a href="#" >Basiskennis</a><span class="fa fa-check"></span></li>
+        <ul class="dropdown">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+        </ul>
+        <li><a href="#">Programmeren 1</a></li>
+    </ul>
+    <h3>Trimister II</h3>
+    <ul>
+        <li><a href="#">Besturingsystemen</a></li>
+        <li><a href="#">Programmeren 1</a></li>
+    </ul>
+    <h3>Trimister III</h3>
+    <ul>
+        <li><a href="#">IT-organisatie</a></li>
+        <li><a href="#">Programmeren 2</a></li>
+    </ul>
+    </div>
+    <button id="button1" onclick="closeNav()"><img id="im1" src="images/1x/button1_B%20kopie.png"></button>
+</nav>
+
+<main>
+    <h1>Les 1 : Geschiedenis</h1>
+    <p>Isquiandi asped quam rendi officat rem inctectae et ium aut de omnienimusa plignihit hitibeaqui nobis maioreium faccus.
+Ulpa vollate cus, id utatusam quos ium quo magnatur? Sedit, con cusantur aliatis rerumquodit que moluptaspis erio volum earum sitatias con conseque net vel is voluptas etur aut dolecat aliquos sitius dolestis unt rae sunt qui nulliquam que cum aut ut volupid elest, quam simoles serchil ium remquidi blabo. On re estium faccae as et optatur? Quiae. Ed mil molupidus aut qui nestiasitas et hilibea dolupti berorer umquam quamenim nat volut endellignat.
+Tam reprerestrum et mincia nonetum dempelessi quamet maiossima qui doluptur sitissi dit dolectentia commolu pientotae. Rio. Eligend itatis unt etumqui dellam coribus eum ressequam consent.
+Il molorepratem siti bea cusa diatem fuga. Minctem aut hit, ipiendi dolorum ra sit et ea dellore vollo od excerro et fugiatur?
+Pa sa plignim ilibus dusto dit erro ium et reiumendi bernatus adigent porio. As eium nus verores sequaeptatem resti quam hicabor aut et explaudi officip idebis mos necabores eos eriate nonsectatio de peres nos sita dolore accusdae offictur? Qui idus.</p>
+    <p>Isquiandi asped quam rendi officat rem inctectae et ium aut de omnienimusa plignihit hitibeaqui nobis maioreium faccus.
+Ulpa vollate cus, id utatusam quos ium quo magnatur? Sedit, con cusantur aliatis rerumquodit que moluptaspis erio volum earum sitatias con conseque net vel is voluptas etur aut dolecat aliquos sitius dolestis unt rae sunt qui nulliquam que cum aut ut volupid elest, quam simoles serchil ium remquidi blabo. On re estium faccae as et optatur? Quiae. Ed mil molupidus aut qui nestiasitas et hilibea dolupti berorer umquam quamenim nat volut endellignat.
+Tam reprerestrum et mincia nonetum dempelessi quamet maiossima qui doluptur sitissi dit dolectentia commolu pientotae. Rio. Eligend itatis unt etumqui dellam coribus eum ressequam consent.
+Il molorepratem siti bea cusa diatem fuga. Minctem aut hit, ipiendi dolorum ra sit et ea dellore vollo od excerro et fugiatur?
+Pa sa plignim ilibus dusto dit erro ium et reiumendi bernatus adigent porio. As eium nus verores sequaeptatem resti quam hicabor aut et explaudi officip idebis mos necabores eos eriate nonsectatio de peres nos sita dolore accusdae offictur? Qui idus.</p>
+    <p>Isquiandi asped quam rendi officat rem inctectae et ium aut de omnienimusa plignihit hitibeaqui nobis maioreium faccus.
+Ulpa vollate cus, id utatusam quos ium quo magnatur? Sedit, con cusantur aliatis rerumquodit que moluptaspis erio volum earum sitatias con conseque net vel is voluptas etur aut dolecat aliquos sitius dolestis unt rae sunt qui nulliquam que cum aut ut volupid elest, quam simoles serchil ium remquidi blabo. On re estium faccae as et optatur? Quiae. Ed mil molupidus aut qui nestiasitas et hilibea dolupti berorer umquam quamenim nat volut endellignat.
+Tam reprerestrum et mincia nonetum dempelessi quamet maiossima qui doluptur sitissi dit dolectentia commolu pientotae. Rio. Eligend itatis unt etumqui dellam coribus eum ressequam consent.
+Il molorepratem siti bea cusa diatem fuga. Minctem aut hit, ipiendi dolorum ra sit et ea dellore vollo od excerro et fugiatur?
+Pa sa plignim ilibus dusto dit erro ium et reiumendi bernatus adigent porio. As eium nus verores sequaeptatem resti quam hicabor aut et explaudi officip idebis mos necabores eos eriate nonsectatio de peres nos sita dolore accusdae offictur? Qui idus.</p> 
+    
+</main>
+    
+<script>
+    function openNav() {
+        document.getElementById("navbar").style.width = "initial";
+        document.getElementById("button2").style.display = "none";
+        document.getElementById("button1").style.display = "initial";
+        document.getElementById("divi").style.display = "initial";
+    }
+    function closeNav() {
+        document.getElementById("divi").style.display = "none";
+        document.getElementById("navbar").style.Width = "5vw";
+        document.getElementById("button1").style.display = "none";
+        document.getElementById("button2").style.display = "initial";
+    }
+    
+    function dropdown() {
+        document.getElementsByClassName("dropdown").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
